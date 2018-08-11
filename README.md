@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #  HansaEducation rewritten in Angular6 and Bootstrap 4
 
 Simple Dashboard Admin App built using Angular 6 and Bootstrap 4
@@ -67,3 +68,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # hansaeducation.github.io
 # hansaeducation.github.io
 # hansaeducation
+=======
+# hansaeducation-task
+>>>>>>> c2c3d41899c74ec906bec40b351e223c5035cdd2
