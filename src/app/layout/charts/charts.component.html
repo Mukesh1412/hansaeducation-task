@@ -1,0 +1,100 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Charts'" [icon]="'fa-bar-chart-o'"></app-page-header>
+    <div class="row">
+        <div class="col col-sm-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Bar Chart
+                </div>
+                <div class="card-body" >
+                    <canvas baseChart id="barchart" [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+                        [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+                    </canvas>
+                </div>
+                <div class="card-footer">
+                    <!-- <button class="btn btn-info btn-sm" (click)="randomize()">Update</button> -->
+                    <a id="download" download="barchart.png"><button class="btn btn-info btn-sm" (click)="downloadImage('barchart','download')">Download</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Doughnut Chart
+                </div>
+                <div class="card-body">
+                    <canvas baseChart id="basechart" height="180px" [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType"
+                        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+                    </canvas>
+                </div>
+                <div class="card-footer">
+                    <a id="download1" download="basechart.png"><button class="btn btn-info btn-sm" (click)="downloadImage('basechart','download1')">Download</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-sm-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Radar Chart
+                </div>
+                <div class="card-body">
+                    <canvas baseChart id="radarchart" height="150px" [datasets]="radarChartData" [labels]="radarChartLabels" [chartType]="radarChartType" (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)">
+                    </canvas>
+                </div>
+                <div class="card-footer">
+                    <a id="download2" download="radarchart.png"><button class="btn btn-info btn-sm" (click)="downloadImage('radarchart','download2')">Download</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Pie Chart
+                </div>
+                <div class="card-body">
+                    <canvas baseChart id="piechart" height="150px" [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)">
+                    </canvas>
+                </div>
+                <div class="card-footer">
+                    <a id="download3" download="piechart.png"><button class="btn btn-info btn-sm" (click)="downloadImage('piechart','download3')">Download</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-sm-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Polar Area Chart
+                </div>
+                <div class="card-body">
+                    <canvas baseChart id="polarchart" height="130px" [data]="polarAreaChartData" [labels]="polarAreaChartLabels" [legend]="polarAreaLegend" [chartType]="polarAreaChartType"
+                        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+                    </canvas>
+                </div>
+                <div class="card-footer">
+                    <a id="download4" download="polarchart.png"><button class="btn btn-info btn-sm" (click)="downloadImage('polarchart','download4')">Download</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Line Chart
+                </div>
+                <div class="card-body">
+                    <canvas baseChart id="linechart" height="130" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors"
+                        [legend]="lineChartLegend" [chartType]="lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+                    </canvas>
+                </div>
+                <div class="card-footer">
+                    <a id="download5" download="linechart.png"><button class="btn btn-info btn-sm" (click)="downloadImage('linechart','download5')">Download</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

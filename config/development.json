@@ -1,0 +1,11 @@
+{
+  "host": "0.0.0.0",
+  "port": 3999,
+  "mongodb": {
+    "uri": "mongodb://way2pay:way2pay2k18@49.156.147.105:27017/way2pay",
+    "db": "way2pay"
+  },  
+  "cros": [],
+  "jwtsecret": "W@mon^^7))9eYYY$$uper@dmin",
+  "images_cdn": "http://localhost:3999/"
+}
